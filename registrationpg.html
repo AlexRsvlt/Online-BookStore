@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore - Registration</title>
+    <style>
+      body {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding:20px 0px 2px;
+        background-image: url("book1.png");
+        background-size: cover;
+       
+      }
+      form {
+        background-color: #5C4033;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 70px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 5px #000000;
+        opacity: 90%;
+      }
+      input {
+        border-radius:10px;
+        border-color: white;
+      }
+      input[type=text], input[type=password] {
+        width: 70%;
+        padding: 10px 50px;
+        margin: 5px 0 5px 0;
+        display: inline-block;
+        border: none;
+        background: white;
+        color: #8E7AB5;
+        opacity: 90%;
+      }
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #FFEFD5;
+        color: white;
+        outline: none;
+      }
+      ::placeholder {
+        opacity: 70%;
+      }
+      .Apple {
+        padding: 3px;
+      }
+      .Mango {
+        padding: 2px;
+      }
+      .Kiwi {
+        text-align: center;
+        padding: 10px;
+      }
+      .Orange {
+        padding: 15px 100px;
+        margin: 20px 0px 0px;
+      }     
+      a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: #5C4033;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 5px #000000;
+      }
+      a:hover {
+        background-color: #CD853F;
+      }
+      .btn {
+        width: 60%;
+        background-color: #D2B48C;
+        box-shadow: none;
+      }
+      
+      h2 {
+        color: #D2B48C;
+      }
+    </style>
+</head>
+<body>
+<form>
+<h2 align = center>Application Form</h2>
+   <div class="Mango">
+     <div class="Apple">
+        <label><b>First Name :</b></label>
+        <input type="text", placeholder="Enter your first name" >
+     </div>
+     <div class="Apple">
+         <label><b>Last Name :</b></label>
+         <input type="text", placeholder="Enter your last name" >
+     </div>
+     <div class="Apple">
+         <label for="gender"><b>Gender :</b></label>
+         <input type="radio" id="gender" name="gender" value="male"/>Male 
+         <input type="radio" id="gender" name="gender" value="female"/>Female
+     </div>
+     <div class="Apple">
+         <label><b>Email ID :</b></label>
+         <input type="text", placeholder="Enter your email" >
+     </div> 
+     <div class="Apple">
+         <label><b>Password :</b></label>
+         <input type="password", placeholder="Enter your password" >
+     </div>     
+   </div>
+   <div class="Kiwi">
+     <a class="btn" href="success.html">Register</a>
+   </div>
+</form>
+   <div class="Orange">
+     <a href="index.html">Home</a>
+     <a href="loginpg.html">Log In</a>
+     <a href="cataloguepg.html">Browse Books</a>
+     <a href="cartpg.html">View Cart</a>
+     <a href="paymentpg.html">Proceed to Checkout</a>
+   </div>   
+</body>
+</html>
